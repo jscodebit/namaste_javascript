@@ -93,17 +93,39 @@
 //     var a = 100;
 // }
 
-function z(){
-    let b = 900;
-    function x(){
-        let a = 7;
-        function y(){
-            console.log(a);
-            console.log(b);
-        }
-        a = 100;
-        y();
-    }
-    x();
-}
-z();
+// Classic Closure Example
+// function z(){
+//     let b = 900;
+//     function x(){
+//         let a = 7;
+//         function y(){
+//             console.log(a);
+//             console.log(b);
+//         }
+//         a = 100;
+//         y();
+//     }
+//     x();
+// }
+// z();
+
+// // Simple setTimeout example
+// function x(){
+//     var i = 1;
+//     setTimeout(function(){
+//         console.log(i);
+//     }, 3000);
+//     console.log("Namaste Javascript");
+// }
+// x();
+
+// //Print 1, 2 ,3 4, 5 with a minute gap
+// function x(){
+//     for(let i = 1; i <= 5; i++){
+//         setTimeout(function(){
+//             console.log(i);
+//         }, i * 1000);
+//     }
+//     console.log("Namaste Javascript");
+// }
+// x();
