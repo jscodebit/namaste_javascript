@@ -51,15 +51,59 @@
 // console.log(b);
 // console.log(c);
 
-//Another scenario
-const c = 100;
-function x(){
-    const c = 20;
+// //Another scenario
+// const c = 100;
+// function x(){
+//     const c = 20;
 
-    console.log(window.c);
-    window.c = 30;
-    console.log(c);
+//     console.log(window.c);
+//     window.c = 30;
+//     console.log(c);
+// }
+
+// x();
+// console.log(c);
+
+// //Illegal shadowing
+// let a = 100;
+// {
+//     var a = 30; //You cannot do this shadowing
+//     console.log(a);
+// }
+// console.log(a);
+
+// // Right way of doing this
+// let a = 100;
+// {
+//     let a = 30; //You cannot do this shadowing
+//     console.log(a);
+// }
+// console.log(a);
+
+// var a = 100;
+// {
+//     let a = 30; //You cannot do this shadowing
+//     console.log(a);
+// }
+// console.log(a);
+
+// //Another legal shadowing
+// let a = 30;
+// function x(){
+//     var a = 100;
+// }
+
+function z(){
+    let b = 900;
+    function x(){
+        let a = 7;
+        function y(){
+            console.log(a);
+            console.log(b);
+        }
+        a = 100;
+        y();
+    }
+    x();
 }
-
-x();
-console.log(c);
+z();
