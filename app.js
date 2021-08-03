@@ -149,3 +149,15 @@
 // result();
 
 // Closure Interview questions
+// Increment Function
+function Counter(){
+    var count = 0;
+    function increment(){
+        count++;
+        console.log(count);
+    }
+    return increment;
+}
+
+var counter1 = Counter();
+counter1();counter1();counter1();
