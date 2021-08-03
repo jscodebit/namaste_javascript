@@ -129,3 +129,23 @@
 //     console.log("Namaste Javascript");
 // }
 // x();
+
+// //Closure Interview Examples
+// function anotherOuter(){
+//     var anotherVar = 100;
+//     function outer(b){
+//         function inner(){
+//             console.log(a, b, anotherVar);
+//         }
+//         let a = 10;
+//         return inner;
+//     }
+//     return outer;
+// }
+// let a = 100;
+
+
+// var result = anotherOuter()("Hello World");
+// result();
+
+// Closure Interview questions
