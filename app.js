@@ -179,3 +179,35 @@
 // var x = a();
 // x();
 
+// Function Statement 
+a();
+//b();
+// Function Expression 
+// What are Named function expression?
+function a(){
+    console.log("a called");
+}
+a();
+// Function Declaration
+var b = function(){
+    console.log("b called");
+}
+b();
+// What are anonomous function?
+// function(){
+
+// }
+var x = function(param1){
+    return function(){
+
+    }
+}
+
+console.log(x(function(){}));
+// Difference between Parameters & Arguments?
+// What are First Class functions?
+var y = function(param1){
+    console.log(param1);
+}
+y(function xyz(){});
+// What are Arrow functions?
