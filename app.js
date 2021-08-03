@@ -148,16 +148,22 @@
 // var result = anotherOuter()("Hello World");
 // result();
 
-// Closure Interview questions
-// Increment Function
-function Counter(){
-    var count = 0;
-    function increment(){
-        count++;
-        console.log(count);
-    }
-    return increment;
-}
+// // Closure Interview questions
+// // Increment Function
+// function Counter(){
+//     var count = 0;
+//     this.increment = function(){
+//         count++;
+//         console.log(count);
+//     }
+//     this.decrement = function(){
+//         count--;
+//         console.log(count);
+//     }
+// }
 
-var counter1 = Counter();
-counter1();counter1();counter1();
+// var counter1 = new Counter();
+// counter1.increment();
+// counter1.increment();
+// counter1.increment();
+// counter1.decrement();
