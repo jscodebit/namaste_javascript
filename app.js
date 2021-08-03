@@ -167,3 +167,15 @@
 // counter1.increment();
 // counter1.increment();
 // counter1.decrement();
+
+// //Closure in scene wit Garbage Collector
+// function a(){
+//     var x =0, y = 100;
+//     return function z(){
+//         console.log(x);
+//     }
+// }
+
+// var x = a();
+// x();
+
